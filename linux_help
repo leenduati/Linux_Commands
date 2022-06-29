@@ -1,0 +1,66 @@
+1. cd /etc
+#This goes/changes dir to /etc
+2. cd -
+#Use this to go back to previous directory
+3. cd ~
+#Go to the home directory
+4. clear
+#Clear screen
+5. Ctrl + l
+#Move viewpoint to the highest point [ clears screen momentarily
+6. reset
+#reset shells - empties everything on terminal. Use if you need to clear everything
+7. pushd /var
+#change into a dir, remembers dir that you were in
+8. popd 
+#Revert back to previous dir
+9. vim /etc/ssh/config
+10. Ctrl + z
+#After opening vim, switch between fg nad background in a text editor
+11. fg
+#Bring back the editor to the foreground
+12. htop
+#Shows running aps in realtime, use Ctrl + z to switch fg and bg
+13. sudo -i
+14. exit
+#Switch to super user fulltime then exit to remove
+15. apt update
+16. sudo !!
+#The apt update will exit with an error since it is not requested from root. sudo !! will run previous command 15 in sudo. NO need to repeat previous command
+17. Ctrl + R
+#Search part of a command in history, instead of manually checking the history
+18. which ls
+#Check if a command is installed using which keyword, eg which ls, or which mkdir
+19. !100
+#Run command in history which corresponds to number 100, then run it
+20. HISTTIMEFORMAT="%Y-%m-%d
+#Add a time period to history command, however after closing/restarting shell, this command will be set to default,hence we use the following
+21. nano ~/.bashrc
+#Open .bashrc in home command which allows us to change/add the HISTTIMEFORMAT variable, and change HISTCONTROL=ignoreboth to allow us to ignore lines in history which start with a space
+22. cmatrix
+#install this, and outputs matrix code: no practical code whatsover :) f11 goes to fullscreen
+23. Ctrl + Shift + +
+#Increases font
+24. Ctrl + -
+#Decrease font in terminal
+25. Ctrl + u
+#Deletes everything in terminal, (the command that is) instead of backspace till you delete
+26. Ctrl + a
+#MOve cursor to the left most character/place in terminal
+27. Ctrl + e 
+#MOve cursor to end of command
+28. sudo apt update; sudo apt upgrade
+#Runs two commands hand in hand respectively
+29. ls -l && echo "hello world"
+#Runs two command at the same time. However using double uppersand outputs an error and does not run the second command
+30. tail -f /var/log/syslog
+#Show contents of file and update it in realtime. Check for errors while work is ongoing
+31. truncate -s 0 hello.txt
+#Reset a file to zero, if you do not want to rm the file completely
+32. mount
+#All filesystems mounted in the computer
+33. mount | column -t
+#Shows the output in columns for a better view
+
+
+
